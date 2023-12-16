@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<div class="w-50 m-auto py-3 text-center">
+    <h1 class="text-warning">Home Page</h1>
+    {% for m in messages %}
+    <h1 class="text-{{m.tags}}">{{m}}</h1>
+    {% endfor %}
+</div>
+{% endblock %}
